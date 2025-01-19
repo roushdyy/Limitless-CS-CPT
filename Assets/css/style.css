@@ -24,7 +24,7 @@ body{
     background: #fff;
   }
   .load-box {
-    width: 400px;
+    width: 25%;
     border: 1px solid rgb(228, 9, 137);
     text-align: center;
     font-family: sans-serif;
@@ -298,6 +298,10 @@ body{
     30%, 50% {
       width: 500px;
     }
+  }
+
+  .html-container{
+      width: 1000px;
   }
 
   ul {
