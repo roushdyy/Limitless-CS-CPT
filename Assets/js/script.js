@@ -49,3 +49,11 @@ let mainF = (e) => {
 }
 
 window.addEventListener("load", mainF);
+
+function myData() {
+  retrun;
+}
+
+function show() {
+  document.getElementById('anotherFunction').classList.toggle('Active');
+}
