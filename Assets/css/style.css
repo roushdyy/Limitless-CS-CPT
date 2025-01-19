@@ -300,12 +300,13 @@ body{
     }
   }
 
-  .html-container{
-      width: 1000px;
+  .navigation {
+    width: 1000px;
   }
 
   ul {
     list-style-type: none;
+    width: 1000px;
     display: flex;
     padding: 18px 0;
     background-size: 400% 400%;
