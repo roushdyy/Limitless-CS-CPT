@@ -57,3 +57,9 @@ function myData() {
 function show() {
   document.getElementById('anotherFunction').classList.toggle('Active');
 }
+
+$(".base-switch").on("click",switchTheme);
+
+function switchTheme(){
+  $("body").toggleClass("changed-theme");
+}

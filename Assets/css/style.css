@@ -466,3 +466,51 @@ body{
       width: 250px;
     }
   }
+
+  body{
+    font-family:"Open Sans", "Arial", sans-serif;
+    letter-spacing: -1px;
+    background-color: #181818;
+    transition: .4s ease-in-out;
+  }
+  
+  body.changed-theme{
+    background-color: #fff;
+  }
+  
+  .theme-switch:after{
+    content:"Dark theme";
+    font-size: 10px;
+    font-weight: bold;
+    color: #747474;
+    vertical-align: text-top;
+  }
+  
+  .changed-theme .theme-switch:after{
+    content:"Light theme";
+  }
+  
+  .base-switch{
+    width: 40px;
+    height: 20px;
+    border: 1px solid #747474;
+    border-radius: 10px;
+    position: relative;
+    cursor: pointer;
+    display: inline-block;
+  }
+  
+  .inner-switch{
+    width: 16px;
+    height: 16px;
+    background-color: #747474;
+    border-radius: 100%;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    transition: .4s ease-in-out;
+  }
+  
+  .changed-theme .inner-switch{
+    transform:translateX(20px)
+  }
