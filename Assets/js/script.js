@@ -71,3 +71,9 @@ document.getElementById('learnMoreBtn').addEventListener('click', function() {
 document.querySelector('.cta-button').addEventListener('click', function() {
   alert('Thank you for joining Limitless Fitness!');
 });
+
+document.querySelectorAll('button').forEach(button => {
+  button.addEventListener('click', () => {
+    console.log(`${button.parentElement.querySelector('h2').textContent} plan selected!`);
+  });
+});
