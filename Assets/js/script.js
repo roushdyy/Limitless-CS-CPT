@@ -1,7 +1,7 @@
 const counter = document.querySelector(".counter");
 const bar = document.querySelector("#bar");
 let load = 1;
-let loading = setInterval(countUp, 20);
+let loading = setInterval(countUp, 5);
 function countUp() {
   load++;
   counter.textContent = Math.floor(load / 2) + "%";
