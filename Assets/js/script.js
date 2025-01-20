@@ -67,3 +67,7 @@ function switchTheme(){
 document.getElementById('learnMoreBtn').addEventListener('click', function() {
   alert('Learn More button clicked!');
 });
+
+document.querySelector('.cta-button').addEventListener('click', function() {
+  alert('Thank you for joining Limitless Fitness!');
+});
