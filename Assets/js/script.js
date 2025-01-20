@@ -63,3 +63,7 @@ $(".base-switch").on("click",switchTheme);
 function switchTheme(){
   $("body").toggleClass("changed-theme");
 }
+
+document.getElementById('learnMoreBtn').addEventListener('click', function() {
+  alert('Learn More button clicked!');
+});
