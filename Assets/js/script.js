@@ -77,3 +77,25 @@ document.querySelectorAll('button').forEach(button => {
     console.log(`${button.parentElement.querySelector('h2').textContent} plan selected!`);
   });
 });
+
+document.getElementById('getRecipes').addEventListener('click', () => {
+  const recipeList = document.getElementById('recipeList');
+  recipeList.innerHTML = '<li>Loading recipes...</li>';
+
+  const API_URL = '' //add API;
+
+  fetch(API_URL)
+      .then(response => response.json())
+      .then(data => {
+          recipeList.innerHTML = ''; 
+          data.recipes.forEach(recipe => {
+              const li = document.createElement('li');
+              li.innerHTML = `<a href="${recipe.sourceUrl}" target="_blank">${recipe.title}</a>`;
+              recipeList.appendChild(li);
+          });
+      })
+      .catch(error => {
+          recipeList.innerHTML = '<li>Failed to load recipes. Please try again later.</li>';
+          console.error('Error fetching recipes:', error);
+      });
+});
